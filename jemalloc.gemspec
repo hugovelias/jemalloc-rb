@@ -5,6 +5,11 @@ require 'jemalloc/version'
 Gem::Specification.new do |s|
   s.name = "jemalloc"
   s.version = JEMalloc::VERSION
+  s.summary = "use jemalloc as default allocator, everywhere!"
+  s.description = %q{Use jemalloc as default allocator, everywhere!}
+  s.author = "Kazuki Ohta"
+  s.email = "kazuki.ohta@gmail.com"
+  s.homepage = "https://github.com/treasure-data/jemalloc-rb"
   s.extensions = ["ext/jemalloc/extconf.rb"]
 
   s.files = `git ls-files`.split("\n")
